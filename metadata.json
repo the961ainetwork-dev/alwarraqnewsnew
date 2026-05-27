@@ -1,0 +1,6 @@
+{
+  "name": "الوراق نيوز",
+  "description": "منصة صحفية مستقلة مكررة وبدقة متناهية، تقدم التغطيات والتحليلات لجميع الأقسام، مع لوحة إدارة متكاملة ومساعد ذكي مدعوم بجيميناي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

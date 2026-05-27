@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Noto Naskh Arabic', 'Cairo', 'Tajawal', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Noto Naskh Arabic', 'Amiri', Georgia, serif;
+  --color-brand-primary: #a12c2e; /* Crimson Red used by Independent Arabia */
+  --color-paper: #fcfbf9; /* Warm editorial background */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-paper);
+  color: #1a1a1a;
+  direction: rtl;
+  text-align: right;
+}
+
+html {
+  font-size: 20px; /* Scales standard 16px to 20px (increase by 4 points) */
+}
+
+/* Specific scaling overrides for arbitrary custom small font metrics */
+.text-\[9px\] {
+  font-size: 13px !important;
+}
+.text-\[10px\] {
+  font-size: 14px !important;
+}
+.text-\[11px\] {
+  font-size: 15px !important;
+}
+.text-\[17px\] {
+  font-size: 21px !important;
+}
+
+/* Custom styles for newspaper feeling */
+.serif-text {
+  font-family: var(--font-serif);
+}
+
+.newspaper-col-right {
+  border-left: 1px solid rgba(161, 44, 46, 0.15);
+}
+
+.newspaper-col-left {
+  border-right: 1px solid rgba(161, 44, 46, 0.15);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f0ec;
+}
+::-webkit-scrollbar-thumb {
+  background: #a12c2e;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7d2224;
+}
+
+/* Hover scale effect for interactive analysis elements */
+#interactive-analysis-section .cursor-pointer {
+  transition: transform 0.2s ease-in-out;
+}
+#interactive-analysis-section .cursor-pointer:hover {
+  transform: scale(1.02);
+}
+
+
